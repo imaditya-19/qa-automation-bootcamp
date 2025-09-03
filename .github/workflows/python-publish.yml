@@ -23,11 +23,15 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install pytest pytest-html
-      - name: Run tests
-        run: |
-          pytest tests/ --html=reports/report.html --self-contained-html
-      - name: Upload report
+      - name: Run master_run_all_tests.py
+        run: python master_run_all_tests.py
+      - name: Upload HTML report
         uses: actions/upload-artifact@v4
         with:
-          name: test-report
-          path: reports/report.html
+          name: all_tests_report
+          path: reports/all_tests_report.html
+      - name: Upload log file
+        uses: actions/upload-artifact@v4
+        with:
+          name: test_run_log
+          path: logs/test_run.log
