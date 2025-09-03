@@ -1,0 +1,25 @@
+name: Python Tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pytest pytest-html
+      - name: Run tests
+        run: |
+          pytest tests/ --html=reports/report.html --self-contained-html
+      - name: Upload report
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-report
+          path: reports/report.html

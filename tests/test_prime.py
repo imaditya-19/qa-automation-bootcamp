@@ -29,7 +29,8 @@ def interactive_check():
         (10, False), (13, True), (17, True),
         (23, True), (24, False), (1, False), (0, False),
         (-5, False), (29, True), (30, False), (31, True),
-        (37, True), (100, False)
+        (37, True), (100, False),(150, False),
+        (97, True), (89, True), (77, False), (49, False)
     ]
 )
 def test_is_prime(num, expected):
