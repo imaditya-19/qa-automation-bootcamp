@@ -81,3 +81,13 @@ Contributions are welcome! Please submit issues and pull requests for improvemen
 
 ## License
 This project is licensed under the MIT License.
+
+---
+
+## Progress Log
+
+**2025-09-03**
+- Created a professional README.md template for the QA automation framework.
+- Updated README.md to reflect project structure and setup instructions.
+- Manual edits made to README.md for customization.
+- Began work in `utils/helpers.py` for utility functions.
