@@ -1,0 +1,9 @@
+pytest
+playwright
+pytest-bdd
+pytest-html
+allure-pytest
+flake8
+black
+isort
+pre-commit
