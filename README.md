@@ -91,3 +91,10 @@ This project is licensed under the MIT License.
 - Updated README.md to reflect project structure and setup instructions.
 - Manual edits made to README.md for customization.
 - Began work in `utils/helpers.py` for utility functions.
+**2025-09-03 (Continued)**
+- Refactored and improved test files for prime and factorial functions, including edge cases and exception handling.
+- Added parameterized tests and grouped tests for better coverage and maintainability.
+- Implemented a master runner script (`master_run_all_tests.py`) to execute all tests and generate HTML reports and logs.
+- Configured logging to store test run logs in the `logs/` folder.
+- Set up GitHub Actions workflow to run only the master runner script and upload both HTML report and log file as artifacts.
+- Documented how to automate, schedule, and view test results and reports locally and in the cloud.
